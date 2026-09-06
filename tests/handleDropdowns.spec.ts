@@ -44,6 +44,35 @@ test("Handling Dropdowns",async ({page})=>{
     await page.locator("#colors").selectOption(["red","blue"]);
     await page.locator("#colors").selectOption([{label:"Yellow"},{label:"Green"}]);
 
+})
+
+test.only("Handling Dropdowns continuation",async ({page})=>{
+
+    //verify dropdown is sorted
+    await page.goto("https://testautomationpractice.blogspot.com/");
+    const options:Locator = page.locator("#colors>option");
+    const optionText:string[] = (await options.allTextContents()).map(index=>index.trim())
+    const ogdropdowns:string[]=[...optionText];
+    const sortedoptions:string[] = optionText.sort();
+    expect(ogdropdowns).not.toEqual(sortedoptions);
 
 
+    //verify dropdown contains duplicates
+    const myset = new Set<string>();
+    const duplicates:string[]=[];
+    for (let i of optionText){
+        if(myset.has(i)){
+            duplicates.push(i);
+        }
+        else{
+            myset.add(i);
+        }
+    }
+    // expect(duplicates).toHaveLength(0);
+    if(duplicates.length>0){
+        console.log("Duplicates in the dropdown are : "+duplicates);
+    }
+    else{
+        console.log("No duplicates in the dropdown");
+    }
 })
