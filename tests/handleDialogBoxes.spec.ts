@@ -7,15 +7,21 @@ test("handling dialog boxes", async ({ page }) => {
     page.on("dialog",(dialog)=>{
         console.log(dialog.type());
         console.log(dialog.message());
-        //dialog.accept();
-        dialog.dismiss();
+        //dialog.accept(); //1
+        // dialog.dismiss();  //2
+        expect(dialog.defaultValue()).toContain("Harry Potter");
+        dialog.accept("sameer");
     })
 
-    // await page.locator("#alertBtn").click();
-    await page.locator("#confirmBtn").click();
-    const message=await page.locator("#demo").textContent();
-    expect(message).toContain("Cancel");
+    // await page.locator("#alertBtn").click(); //1
 
+    // await page.locator("#confirmBtn").click(); //2
+    // const message=await page.locator("#demo").textContent();
+    // expect(message).toContain("Cancel");
+
+    await page.locator("#promptBtn").click(); 
+    const message=await page.locator("#demo").textContent();
+    expect(message).toContain("sameer");
 
 
 })
