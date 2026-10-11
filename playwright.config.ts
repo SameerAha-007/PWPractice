@@ -14,7 +14,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
 
-  grep:/@sanity/,
+  // grep:/@sanity/,
   /*grepInvert:/@regression/*/
   testDir: './tests',
   /* Run tests in files in parallel */
