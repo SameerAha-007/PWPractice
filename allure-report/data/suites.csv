@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4223","array of data validuser@example.com","chromium","2026-10-12","passed","2026-10-12","read json data","parameterization.spec.ts","",""
+"","13976","array of data laura.taylor1234@example.com","chromium","2026-10-12","passed","2026-10-12","read json data","parameterization.spec.ts","",""
+"","4702","array of data","chromium","2026-10-12","passed","2026-10-12","read json data","parameterization.spec.ts","",""
+"","3707","array of data invaliduser@example.com","chromium","2026-10-12","passed","2026-10-12","read json data","parameterization.spec.ts","",""

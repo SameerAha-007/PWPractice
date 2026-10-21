@@ -1,0 +1,38 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="55.533822">
+<testsuite name="parameterization.spec.ts" timestamp="2026-10-12T16:57:03.234Z" hostname="chromium" tests="4" failures="0" skipped="0" time="26.608" errors="0">
+<testcase name="read json data › array of data laura.taylor1234@example.com" classname="parameterization.spec.ts" time="13.976">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\parameterization-read-json-6330c-aura-taylor1234-example-com-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="read json data › array of data invaliduser@example.com" classname="parameterization.spec.ts" time="3.707">
+<system-out>
+<![CDATA[Login was unsuccessful. Please correct the errors and try again.
+The credentials provided are incorrect
+
+[[ATTACHMENT|test-results\parameterization-read-json-78c29-ata-invaliduser-example-com-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="read json data › array of data validuser@example.com" classname="parameterization.spec.ts" time="4.223">
+<system-out>
+<![CDATA[Login was unsuccessful. Please correct the errors and try again.
+The credentials provided are incorrect
+
+[[ATTACHMENT|test-results\parameterization-read-json-048d0--data-validuser-example-com-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="read json data › array of data " classname="parameterization.spec.ts" time="4.702">
+<system-out>
+<![CDATA[Login was unsuccessful. Please correct the errors and try again.
+No customer account found
+
+[[ATTACHMENT|test-results\parameterization-read-json-data-array-of-data--chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
