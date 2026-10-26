@@ -1,38 +1,43 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="55.533822">
-<testsuite name="parameterization.spec.ts" timestamp="2026-10-12T16:57:03.234Z" hostname="chromium" tests="4" failures="0" skipped="0" time="26.608" errors="0">
-<testcase name="read json data › array of data laura.taylor1234@example.com" classname="parameterization.spec.ts" time="13.976">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="1" time="95.77680899999994">
+<testsuite name="handleDatepickers.spec.ts" timestamp="2026-10-21T17:22:10.620Z" hostname="chromium" tests="1" failures="0" skipped="0" time="32.385" errors="1">
+<testcase name="Handling DatePickers" classname="handleDatepickers.spec.ts" time="32.385">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\parameterization-read-json-6330c-aura-taylor1234-example-com-chromium\video.webm]]
-]]>
-</system-out>
-</testcase>
-<testcase name="read json data › array of data invaliduser@example.com" classname="parameterization.spec.ts" time="3.707">
-<system-out>
-<![CDATA[Login was unsuccessful. Please correct the errors and try again.
-The credentials provided are incorrect
+[[ATTACHMENT|test-results\handleDatepickers-Handling-DatePickers-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\parameterization-read-json-78c29-ata-invaliduser-example-com-chromium\video.webm]]
-]]>
-</system-out>
-</testcase>
-<testcase name="read json data › array of data validuser@example.com" classname="parameterization.spec.ts" time="4.223">
-<system-out>
-<![CDATA[Login was unsuccessful. Please correct the errors and try again.
-The credentials provided are incorrect
+[[ATTACHMENT|test-results\handleDatepickers-Handling-DatePickers-chromium\video.webm]]
 
-[[ATTACHMENT|test-results\parameterization-read-json-048d0--data-validuser-example-com-chromium\video.webm]]
+[[ATTACHMENT|test-results\handleDatepickers-Handling-DatePickers-chromium\error-context.md]]
 ]]>
 </system-out>
-</testcase>
-<testcase name="read json data › array of data " classname="parameterization.spec.ts" time="4.702">
-<system-out>
-<![CDATA[Login was unsuccessful. Please correct the errors and try again.
-No customer account found
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  [chromium] › handleDatepickers.spec.ts:33:5 › Handling DatePickers ───────────────────────────────
 
-[[ATTACHMENT|test-results\parameterization-read-json-data-array-of-data--chromium\video.webm]]
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.textContent: Target page, context or browser has been closed
+
+       5 |     while (true) {
+       6 |
+    >  7 |         const currentMonth = await page.locator(".ui-datepicker-month").textContent();
+         |                                                                         ^
+       8 |         const currentYear = await page.locator(".ui-datepicker-year").textContent();
+       9 |
+      10 |         if (currentMonth === targetMonth && currentYear === targetyear) {
+        at selectDate (C:\Users\sameer\OneDrive\Documents\GitHub\PWPractice\tests\handleDatepickers.spec.ts:7:73)
+        at C:\Users\sameer\OneDrive\Documents\GitHub\PWPractice\tests\handleDatepickers.spec.ts:45:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\handleDatepickers-Handling-DatePickers-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\handleDatepickers-Handling-DatePickers-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\handleDatepickers-Handling-DatePickers-chromium\error-context.md
 ]]>
-</system-out>
+</error>
 </testcase>
 </testsuite>
 </testsuites>

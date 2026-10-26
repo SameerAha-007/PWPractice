@@ -1,14 +1,6 @@
 {
   "config": {
-    "argv": [
-      "C:\\nvm4w\\nodejs\\node.exe",
-      "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\node_modules\\@playwright\\test\\cli.js",
-      "test",
-      "parameterization.spec.ts",
-      "--grep",
-      "read json data",
-      "--workers=1"
-    ],
+    "argv": [],
     "configFile": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\playwright.config.ts",
     "rootDir": "C:/Users/sameer/OneDrive/Documents/GitHub/PWPractice/tests",
     "failOnFlakyTests": false,
@@ -125,216 +117,95 @@
     },
     "shard": null,
     "tags": [],
-    "updateSnapshots": "default",
-    "updateSourceMethod": "patch",
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
     "version": "1.64.0",
-    "workers": 1,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "parameterization.spec.ts",
-      "file": "parameterization.spec.ts",
+      "title": "handleDatepickers.spec.ts",
+      "file": "handleDatepickers.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "read json data",
-          "file": "parameterization.spec.ts",
-          "line": 58,
-          "column": 6,
-          "specs": [
+          "title": "Handling DatePickers",
+          "ok": false,
+          "tags": [],
+          "tests": [
             {
-              "title": "array of data laura.taylor1234@example.com",
-              "ok": true,
-              "tags": [
-                "example.com"
-              ],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32385,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 13976,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-10-12T16:57:04.241Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\parameterization-read-json-6330c-aura-taylor1234-example-com-chromium\\video.webm"
-                        }
-                      ]
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\tests\\handleDatepickers.spec.ts",
+                        "column": 73,
+                        "line": 7
+                      },
+                      "message": "Error: locator.textContent: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     \u001b[36mwhile\u001b[39m (\u001b[36mtrue\u001b[39m) {\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mconst\u001b[39m currentMonth \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".ui-datepicker-month\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[36mconst\u001b[39m currentYear \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".ui-datepicker-year\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mif\u001b[39m (currentMonth \u001b[33m===\u001b[39m targetMonth \u001b[33m&&\u001b[39m currentYear \u001b[33m===\u001b[39m targetyear) {\u001b[0m\n\u001b[2m    at selectDate (C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\tests\\handleDatepickers.spec.ts:7:73)\u001b[22m\n\u001b[2m    at C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\tests\\handleDatepickers.spec.ts:45:6\u001b[22m"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "58d6e48c481c09cb2370-0babeb20470a59ed3180",
-              "file": "parameterization.spec.ts",
-              "line": 60,
-              "column": 13
-            },
-            {
-              "title": "array of data invaliduser@example.com",
-              "ok": true,
-              "tags": [
-                "example.com"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T17:22:22.631Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3707,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-10-12T16:57:23.977Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\parameterization-read-json-78c29-ata-invaliduser-example-com-chromium\\video.webm"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\handleDatepickers-Handling-DatePickers-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\handleDatepickers-Handling-DatePickers-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\handleDatepickers-Handling-DatePickers-chromium\\error-context.md"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "58d6e48c481c09cb2370-3b7f71701d70225137ec",
-              "file": "parameterization.spec.ts",
-              "line": 60,
-              "column": 13
-            },
-            {
-              "title": "array of data validuser@example.com",
-              "ok": true,
-              "tags": [
-                "example.com"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4223,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-10-12T16:57:27.768Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\parameterization-read-json-048d0--data-validuser-example-com-chromium\\video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "58d6e48c481c09cb2370-ca49d36d8ce9c3099c7f",
-              "file": "parameterization.spec.ts",
-              "line": 60,
-              "column": 13
-            },
-            {
-              "title": "array of data ",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4702,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-10-12T16:57:32.130Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\sameer\\OneDrive\\Documents\\GitHub\\PWPractice\\test-results\\parameterization-read-json-data-array-of-data--chromium\\video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "58d6e48c481c09cb2370-a06a783179cc44f362c4",
-              "file": "parameterization.spec.ts",
-              "line": 60,
-              "column": 13
+              "status": "unexpected"
             }
-          ]
+          ],
+          "id": "9da759f1c2e2a698beef-f1f77ec3013e275fff65",
+          "file": "handleDatepickers.spec.ts",
+          "line": 33,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-12T16:57:00.080Z",
-    "duration": 55533.822,
-    "expected": 4,
+    "startTime": "2026-10-21T17:21:56.405Z",
+    "duration": 95776.80899999995,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
